@@ -1,10 +1,13 @@
 <h1>Enter the name of the album</h1>
 
 <form action="/albums" method="post">
+  <select name="artist_id">
+    <option value="1">Oasis</option>
+    <option value="2">Blur</option>
   <label for="name">Title</label>
   <input type="text" name="name">
-  <label for="artist_id"></label>
-  <input type="text" name=“artist_id” value=“#{@artist_id}”>
+  <!-- <label for="artist_id"></label>
+  <input type="text" name=“artist_id” value=“#{@artist_id}”> -->
 
   <input type="submit" value="Add album">
   </form>

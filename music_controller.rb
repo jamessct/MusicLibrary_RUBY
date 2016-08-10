@@ -22,27 +22,31 @@ get('/artists') do
 end
 
 #Show
-get('/artists/:id/') do
+get('/artists/:id') do
   @artists = Artist.find(params[:id])
   erb(:show_artist)
 end
 
 
+#New
 get('/albums/new') do
   erb(:new_album)
 end
 
+#Create
 post('/albums') do
   @albums = Album.new(params)
   @albums.save
   erb(:create_album)
 end
 
-get('/albums/') do
+#Index
+get('/albums') do
   @albums = Album.all
   erb(:index_album)
 end
 
+#Show
 get('/albums/:id') do
   @albums = Album.find(params[:id])
   erb(:show_album)
