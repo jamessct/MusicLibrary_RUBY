@@ -2,6 +2,7 @@ require('sinatra')
 require('sinatra/contrib/all')
 require('pry-byebug')
 require_relative('models/artist')
+require_relative('models/album')
 
 #New
 get('/artists/new') do
