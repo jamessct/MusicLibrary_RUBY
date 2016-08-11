@@ -2,7 +2,6 @@
 
 
 <% @albums.each do |album| %>
-<p>Album: <%= album.name %></p>
-<a href="/albums/<%= album.id %>">View</a>
-
+  <p>Album: <%= album.name %></p>
+  <a href="/albums/<%= album.id %>">View</a>
 <% end %>
