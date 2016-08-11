@@ -7,7 +7,17 @@ h1 {
   color: grey;
 }
 
+h3 { 
+  font-family: "arial";
+  color: grey;
+}
+
 label {
+  font-family: "arial";
+  color: grey;
+}
+
+p {
   font-family: "arial";
   color: grey;
 }
