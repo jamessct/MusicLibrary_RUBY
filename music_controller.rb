@@ -30,6 +30,7 @@ end
 
 #New
 get('/albums/new') do
+  @artists = Artist.all(params[:id])
   erb(:new_album)
 end
 
